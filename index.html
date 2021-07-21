@@ -22,14 +22,28 @@
         </nav>
     </header>
     <main class="container">
-        <div id="app"></div>
+        <div class="row">
+            <div class="col-md-3 side-bar-scroll">
+                <h3>All Pokemon</h3>
+                <ol id="api-pokemon"></ol>
+            </div>
+            <div class="col-md-6" id="active-pokemon">
+                <div class="text-center"><em>No Active Pokemon</em></div>
+            </div>
+            <div class="col-md-3 side-bar-scroll">
+                <h3>Captured Pokemon</h3>
+                <ol id="my-pokemon"></ol>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+            <p><small>Made with love by Chris</small></p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
